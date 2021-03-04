@@ -1,0 +1,62 @@
+.About_shadowed {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+}
+
+.About_terminal {
+  border-radius: 0.5rem;
+  width: 50%;
+  margin: 5rem auto 5rem auto;
+}
+
+.About_topRow {
+  background-color: #bdc6ce;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  font-size: 1rem;
+}
+
+.About_topRow i {
+  padding-left: 0.5rem;
+}
+
+.About_red_circle {
+  color: #ff6057;
+}
+
+.About_yellow_circle {
+  color: #ffbd2e;
+}
+
+.About_green_circle {
+  color: #27c93f;
+}
+
+.About_window {
+  padding: 2rem 3rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+  background-color: #232323;
+  color: #f8f8f8;
+}
+
+.About_window p,
+.About_window li {
+  font-size: 1.7rem;
+  font-family: "Courier New", Courier, monospace;
+  margin: 1.3rem 0;
+}
+
+.About_green {
+  color: #1ed700;
+}
+
+.About_skills {
+  -webkit-columns: 2;
+  columns: 2;
+}
+
+.About_skills li {
+  list-style: none;
+  margin: 0;
+  line-height: 2;
+}

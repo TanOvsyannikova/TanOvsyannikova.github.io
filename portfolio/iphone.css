@@ -1,0 +1,17 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wesplit {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: space-evenly;
+}
+
+.wesplit img {
+  margin: 0 20% 0;
+  width: 250px;
+  height: 500px;
+}
