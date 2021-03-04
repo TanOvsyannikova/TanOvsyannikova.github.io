@@ -1,0 +1,106 @@
+body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("Assets/adam-chang-IWenq-4JHqo-unsplash.jpg") no-repeat center/cover ;
+    overflow: hidden;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+  
+  body::before{
+      content: "";
+      width: 105vw;
+      position: absolute;
+      top: -100px;
+      left: -20px;
+      bottom: 0;
+      right: 0;
+      filter: blur(5px);
+      background: inherit;
+    }
+
+  .calendar {
+      position: relative;
+      width: 350px;
+      background-color: white;
+      box-sizing: border-box;
+      box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .calendar-picture {
+        position: relative;
+        height: 200px;
+        padding: 20px;
+        color: white;
+        background: #262626 url("Assets/adam-chang-IWenq-4JHqo-unsplash.jpg") no-repeat center/cover;
+        text-shadow: rgba(0, 0, 0, 0.2);
+        box-sizing: border-box;
+
+    }
+
+    .calendar-picture::before{
+        content: "";
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+    }
+
+    .calendar-picture h2{
+        margin: 0;
+        color: rgb(21, 30, 32);
+    }
+
+    .calendar-picture h3{
+        margin: 0;
+        font-weight: 500;
+        color: rgb(21, 30, 32);
+    }
+
+    .calendar__date{
+        padding: 30px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
+        gap: 15px;
+        box-sizing: border-box;
+    }
+
+    .calendar__day{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 25px;
+        font-weight: 600;
+        color: rgb(21, 30, 32);
+    }
+
+    .calendar__day:nth-child(7){
+        color: #550701;
+    }
+
+    .calendar__number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 25px;
+        color: rgb(21, 30, 32);
+        font-size: large;
+    }
+
+    .calendar__number:nth-child(7n){
+        color: #550701;
+        font-weight: 700;
+    }
+
+   .calendar__number--current, .calendar__number:hover{
+        background-color: #1f3a37;
+        color: #fff;
+        font-weight: 700;
+        cursor: pointer;
+   }
